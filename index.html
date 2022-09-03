@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <h1 class="title">Generate a <br> <span class="green-text">random password</span> </h1>
+            <p class="underline">Never use an insecure password again.</p>
+
+            <div class="settings-section">
+                <hr class="line-separator green-line">   
+                <div class="input-section">
+                    <label class="underline">Password length: 
+                    <span class="green-text" id="selected-length">15</span>
+                    </label>
+                    <input class="length-input-selector" type="range" min="8" max="15" step="1" value="15"> 
+                </div>
+                <p class="underline check-text">Symbols in password?</p>
+                <input id="check-symbols" class="check-box" type="checkbox" checked="true">
+                <button onclick="fillPasswords()" class="main-btn">Generate password</button>
+                <hr class="line-separator grey-line">    
+            </div>
+
+            <h1 class="hint underline">Click on password to copy to clipboard</h1>
+            <div class="generated-password-sections">
+                <button id="pas-btn1" class="generated-passwords"></button>
+                <button id="pas-btn2" class="generated-passwords"></button>
+            </div>
+
+            <h5> Made by Hrant Sahakyan in terms of SCRIMBA solo project <br> hrant@sahakyan.ru</h5>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
